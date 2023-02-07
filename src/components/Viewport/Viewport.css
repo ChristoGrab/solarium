@@ -4,11 +4,29 @@
   height: 100vh;
   top: 0;
   right: 0;
-  background-color: black;
+  background-image: url('../../../public/stars.jpg');
+  background-size: cover;
 }
 
 .title {
   color: yellow;
   font-size: 48px;
   text-align: center;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.creator {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  animation: fadeIn 5s;
 }

@@ -1,28 +1,24 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import "./InfoCard.css"
 
 const InfoCard = () => {
   
   const { planet } = useParams();
+  const navigate = useNavigate()
   
-  let info;
-  
-  const fetchPlanet = async () => {
-    const data = await fetch('https://api.le-systeme-solaire.net/rest/bodies')
-    
-    const response = await data.json()
-    
-    info = response.bodies[0]
+  const returnToMainMenu = async (e) => {
+    e.preventDefault();
+    console.log('hello')
+    return navigate('/')
   }
-  
-  fetchPlanet().then(console.log(info))
-  
   
   return (
     <section className="info-card">
       <div className="infocard-title">
         {planet}
       </div>
+      <button className="infocard-back-button"
+      onClick={returnToMainMenu}>Main</button>
     </section>
   )
 }

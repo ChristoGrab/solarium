@@ -2,7 +2,8 @@
   position: absolute;
   top: 0;
   width: 15%;
-  background: linear-gradient(black, rgb(92, 92, 92));
+  background: #13080e;
+  border-right: 2px solid #e8ab8c;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 
 .planet-selector {
   text-decoration: none;
-  color: rgb(225, 225, 117);
+  color: #e8ab8c;
   font-size: 20px;
   font-weight: bold;
   margin-right: 50px;

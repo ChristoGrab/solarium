@@ -10,10 +10,20 @@
   border-radius: 10px;
   box-shadow: 1px 1px 10px #e8ab8c inset;
   animation: fadeIn 2s;
+  display: flex;
+  
 }
 
 .infocard-title {
   margin: 20px;
   font-size: 20px;
   color: #e8ab8c;
+}
+
+.infocard-back-button {
+  background-color: #e8ab8c;
+  border: none;
+  color: white;
+  height: 40px;
+  border-radius: 3px;
 }

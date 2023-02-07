@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import drawCanvas from '../../planets'
 import InfoCard from '../InfoCard'
 import "./Viewport.css"
 

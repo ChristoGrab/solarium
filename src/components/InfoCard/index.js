@@ -12,6 +12,8 @@ const InfoCard = () => {
     return navigate('/')
   }
   
+  
+  
   return (
     <section className="info-card">
       <div className="infocard-title">

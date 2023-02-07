@@ -1,0 +1,14 @@
+.main-page-container {
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+
+.title {
+  color: yellow;
+  font-size: 48px;
+  text-align: center;
+}

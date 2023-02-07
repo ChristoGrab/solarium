@@ -1,0 +1,23 @@
+.navbar-container {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  background: linear-gradient(black, darkgrey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.planet-selector {
+  text-decoration: none;
+  color: yellow;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.active {
+  color: green;
+}

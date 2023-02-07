@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
+import InfoCard from "./components/InfoCard";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
     <BrowserRouter>
       <Navigation />
       <Viewport />
+      <Routes>
+        <Route path="/:planet" element={<InfoCard />} />
+      </Routes>
     </BrowserRouter>
   </>
   );

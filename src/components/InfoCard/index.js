@@ -1,22 +1,27 @@
 import { useParams } from 'react-router-dom'
 import "./InfoCard.css"
 
-const InfoCard = ( {planet} ) => {
+const InfoCard = () => {
   
-  let planetInfo;
+  const { planet } = useParams();
   
-  const currentPlanet = async () => {
-    const data = await fetch("/https://api.le-systeme-solaire.net/rest/bodies/lune")
+  let info;
+  
+  const fetchPlanet = async () => {
+    const data = await fetch('https://api.le-systeme-solaire.net/rest/bodies')
     
-    planetInfo = data
+    const response = await data.json()
+    
+    info = response.bodies[0]
   }
   
-  currentPlanet()
+  fetchPlanet().then(console.log(info))
+  
   
   return (
     <section className="info-card">
       <div className="infocard-title">
-        {planetInfo}
+        {planet}
       </div>
     </section>
   )

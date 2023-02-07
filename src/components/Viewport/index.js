@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import drawCanvas from '../../planets'
 import InfoCard from '../InfoCard'
 import "./Viewport.css"
 
 const Viewport = () => {
-  
-  let planet = { name: "Mercury" }
 
   return (
     <div className="main-page-container">

@@ -1,29 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import "./Planet.css"
 
-const Planet = () => {
-  
-  const { planet } = useParams()
-  
-  const [planetImage, setPlanetImage] = useState('')
+const Planet = ({planet}) => {
   
   console.log(planet)
-
-  useEffect(() => {
-    
-    console.log(planet)
-    
-    if (planet == "mercury") {
-      setPlanetImage(<div className="mercury" />)
-    } else {
-      setPlanetImage(<div className="venus" />)
-    }
-  
-}, [planet])
   
   return (
     <>
-      {planetImage}
+      <div className={planet} />
     </>
   )
 }

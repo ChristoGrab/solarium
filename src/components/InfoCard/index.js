@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { convertTemp } from '../../functions/convertTemp';
 import axios from "axios"
+import Planet from '../Planet'
 import "./InfoCard.css"
 
 const InfoCard = () => {
@@ -27,6 +28,8 @@ const InfoCard = () => {
   }
   
   return (
+    <>
+    <Planet planet={planet}/>
     <section className="info-card">
       <div className="infocard-title">
         {planetData.englishName}
@@ -40,6 +43,9 @@ const InfoCard = () => {
         Average Temperature: {planetData.avgTemp} K / {convertTemp(planetData.avgTemp)} C
       </div>
       <div className="infocard-field">
+        Gravity: {planetData.gravity} m/s
+      </div>
+      <div className="infocard-field">
         Mean radius: {planetData.meanRadius}
       </div>
       <div className="infocard-field">
@@ -49,6 +55,7 @@ const InfoCard = () => {
         Perihelion: {planetData.perihelion} km
       </div>
     </section>
+    </>
   )
 }
 

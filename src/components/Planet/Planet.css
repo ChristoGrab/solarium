@@ -1,0 +1,9 @@
+.mercury {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  color: grey;
+  position: absolute;
+  top: 60px;
+  left: 30%;
+}

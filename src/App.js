@@ -10,18 +10,17 @@ import normalizeSolarSystemData from "./functions/normalizeData";
 
 function App() {
   
-  const [data, setData] = useState(null)
+  // const [data, setData] = useState(null)
   
-  const fetchData = async () => {
-    return axios.get("https://api.le-systeme-solaire.net/rest/bodies/")
-    .then((response) => setData(normalizeSolarSystemData(response.data)))
-  }
+  // const fetchData = async () => {
+  //   return axios.get("https://api.le-systeme-solaire.net/rest/bodies/")
+  //   .then((response) => setData(normalizeSolarSystemData(response.data)))
+  // }
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  // useEffect(() => {
+  //   fetchData()
+  // }, [])
   
-  console.log(data)
 
   return (
   <>

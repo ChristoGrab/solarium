@@ -11,13 +11,17 @@
   box-shadow: 1px 1px 10px #e8ab8c inset;
   animation: fadeIn 2s;
   display: flex;
-  
+  flex-direction: column;
+  padding: 20px;
 }
 
 .infocard-title {
   margin: 20px;
-  font-size: 20px;
+  font-size: 28px;
   color: #e8ab8c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .infocard-back-button {
@@ -26,4 +30,8 @@
   color: white;
   height: 40px;
   border-radius: 3px;
+}
+
+.infocard-field {
+  color: #e8ab8c;
 }

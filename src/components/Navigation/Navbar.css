@@ -1,8 +1,9 @@
 .navbar-container {
   position: absolute;
   top: 0;
-  width: 20%;
-  background: linear-gradient(black, darkgrey);
+  width: 15%;
+  background: #13080e;
+  border-right: 2px solid #e8ab8c;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,11 +14,12 @@
 
 .planet-selector {
   text-decoration: none;
-  color: yellow;
-  font-size: 24px;
+  color: #e8ab8c;
+  font-size: 20px;
   font-weight: bold;
+  margin-right: 50px;
 }
 
 .active {
-  color: green;
+  color: whitesmoke;
 }

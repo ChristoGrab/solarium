@@ -8,7 +8,9 @@ const Planet = ({planet}) => {
   
   return (
     <>
-      <div className={planet} />
+      <div className={planet}>
+        <div className="crater"></div>
+      </div>
     </>
   )
 }

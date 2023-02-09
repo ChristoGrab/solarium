@@ -30,3 +30,8 @@
   text-align: center;
   animation: fadeIn 5s;
 }
+
+.github-link {
+  color: white;
+  margin-left: 5px;
+}

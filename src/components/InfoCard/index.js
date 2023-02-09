@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { convertTemp } from '../../functions/convertTemp';
+import { convertKmToAU } from '../../functions/convertKmToAU';
 import planetData from '../../data/planets';
 import Planet from '../Planet'
 import "./InfoCard.css"
@@ -32,7 +32,7 @@ const InfoCard = () => {
       onClick={returnToMainMenu}>Main</button>
       </div>
       <div className="infocard-field">
-        Average Orbital Distance: {planetStats.distance} km
+        Average Orbital Distance: {convertKmToAU(planetStats.distance)} AU
       </div>
       <div className="infocard-field">
         Equatorial radius: {planetStats.radius} km
@@ -46,7 +46,7 @@ const InfoCard = () => {
       <div className="infocard-field">
         Moons: {planetStats.moons}
       </div>
-      <div className="infocard-field">
+      <div className="infocard-fact">
         {planetStats.funFact}
       </div>
     </section>

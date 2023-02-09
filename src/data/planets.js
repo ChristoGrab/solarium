@@ -67,7 +67,7 @@ const planetData = {
     "velocity": 34701,
     "volume": 827129915150897,
     "gravity": 10.4,
-    "meanTemp": 0,
+    "meanTemp": -140,
     "moons": 84,
     "funFact": "Saturn is best known for its impressive ring system. It has seven rings in total."
   },
@@ -79,7 +79,7 @@ const planetData = {
     "velocity": 24477,
     "volume": 68334355695584,
     "gravity": 8.87,
-    "meanTemp": 0,
+    "meanTemp": -195,
     "moons": 27,
     "funFact": "Uranus' rotation is set at a nearly 90-degree angle from its plane of orbit, making it seem to spin on its side."
   },
@@ -91,7 +91,7 @@ const planetData = {
     "velocity": 19556,
     "volume": 	62525703987421,
     "gravity": 	11.15,
-    "meanTemp": 0,
+    "meanTemp": -200,
     "moons": 14,
     "funFact": "The most distant planet from the Sun (sorry Pluto), Neptune was the first planet located by mathematical calculations rather than telescope."
   }

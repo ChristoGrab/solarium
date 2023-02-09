@@ -40,12 +40,13 @@
   height: 460px;
   width: 460px;
   background: linear-gradient(to top right, black, white, orange);
+  box-shadow: 3px -3px 10px 10px rgba(159, 158, 155, 0.6)
 }
 
 .saturn {
   height: 445px;
   width: 445px;
-  background: red;
+  background: linear-gradient(to top right, black, #d5bd9b)
 }
 
 .uranus {

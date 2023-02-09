@@ -7,8 +7,9 @@ const planetData = {
     "velocity": 170503,
     "volume": 60827208742,
     "gravity": 3.7,
-    "temperature": [-173, 427],
-    "moons": null
+    "meanTemp": 167,
+    "moons": 0,
+    "funFact": "Mercury is the smallest planet in our solar system."
   },
   "venus": {
     "name": "Venus",
@@ -18,8 +19,9 @@ const planetData = {
     "velocity": 126074,
     "volume": 60827208742,
     "gravity": 8.87,
-    "temperature": [462, 462],
-    "moons": null
+    "meanTemp": 464,
+    "moons": 0,
+    "funFact": "Venus rotates so slowly on its axis (once every 243 Earth days) that a Venusian year is actually shorter than a Venusian day."
   },
   "earth": {
     "name": "Earth",
@@ -29,8 +31,9 @@ const planetData = {
     "velocity": 107218,
     "volume": 1083206916846,
     "gravity": 9.80665,
-    "temperature": [-88, 58],
-    "moons": ["Moon"]
+    "meanTemp": 15,
+    "moons": 1,
+    "funFact": "Earth is the only planet in the solar system with liquid water on the surface. In fact, 71% of its surface is water-covered."
   },
   "mars": {
     "name": "Mars",
@@ -40,9 +43,22 @@ const planetData = {
     "velocity": 86677,
     "volume": 163115609799,
     "gravity": 3.71,
-    "temperature": [-153, 20],
-    "moons": ["Phobos", "Deimos"]
+    "meanTemp": -65,
+    "moons": 2,
+    "funFact": "The surface and atmosphere of Mars appear red because of oxidized iron minerals in the soil."
   },
+  "jupiter": {
+    "name": "Jupiter",
+    "distance": 	778340821,
+    "radius": 69911,
+    "orbit": 11.862615,
+    "velocity": 47002,
+    "volume":	1431281810739360,
+    "gravity": 	24.79,
+    "meanTemp": -110,
+    "moons": 79,
+    "funFact": "Jupiter's mass is more than twice that of every other planet combined."
+  }
 }
 
 export default planetData;

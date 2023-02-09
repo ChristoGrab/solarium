@@ -44,7 +44,10 @@ const InfoCard = () => {
         Gravity: {planetStats.gravity} m/s
       </div>
       <div className="infocard-field">
-        Moons: {planetStats?.moons ? (planetStats.moons.map(moon => <div>{moon}</div>)) : "None"}
+        Moons: {planetStats.moons}
+      </div>
+      <div className="infocard-field">
+        {planetStats.funFact}
       </div>
     </section>
     </>

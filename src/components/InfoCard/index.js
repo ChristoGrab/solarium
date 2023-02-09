@@ -1,26 +1,15 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { convertTemp } from '../../functions/convertTemp';
-import axios from "axios"
+import planetData from '../../data/planets';
 import Planet from '../Planet'
 import "./InfoCard.css"
 
 const InfoCard = () => {
   
   const { planet } = useParams();
-  const navigate = useNavigate()
-  const [planetData, setPlanetData] = useState({})
-  
-  const fetchData = async () => {
-    return axios.get(`https://api.le-systeme-solaire.net/rest/bodies/${planet}`)
-    .then((response) => setPlanetData(response.data))
-  }
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchData()
-  }, [planet])
-  
-  
   const returnToMainMenu = async (e) => {
     e.preventDefault();
     console.log('hello')

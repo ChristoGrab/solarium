@@ -24,7 +24,8 @@
 .earth {
   height: 360px;
   width: 360px;
-  background: blue;
+  background-image: url('../../../public/earth.png');
+  background-position: 270px 450px;
 }
 
 .mars {
@@ -35,26 +36,26 @@
 }
 
 .jupiter {
-  height: 500px;
-  width: 500px;
+  height: 460px;
+  width: 460px;
   background: linear-gradient(to top right, black, white, orange);
 }
 
 .saturn {
-  height: 500px;
-  width: 500px;
+  height: 445px;
+  width: 445px;
   background: red;
 }
 
 .uranus {
-  height: 500px;
-  width: 500px;
+  height: 425px;
+  width: 425px;
   background: red;
 }
 
 .neptune {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background: red;
 }
 

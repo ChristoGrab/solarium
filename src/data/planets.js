@@ -49,15 +49,51 @@ const planetData = {
   },
   "jupiter": {
     "name": "Jupiter",
-    "distance": 	778340821,
+    "distance": 778340821,
     "radius": 69911,
     "orbit": 11.862615,
     "velocity": 47002,
     "volume":	1431281810739360,
     "gravity": 	24.79,
     "meanTemp": -110,
-    "moons": 79,
+    "moons": 80,
     "funFact": "Jupiter's mass is more than twice that of every other planet combined."
+  },
+  "saturn": {
+    "name": "Saturn",
+    "distance": 1426666422,
+    "radius": 58232,
+    "orbit": 29.447498,
+    "velocity": 34701,
+    "volume": 827129915150897,
+    "gravity": 10.4,
+    "meanTemp": 0,
+    "moons": 84,
+    "funFact": "Saturn is best known for its impressive ring system. It has seven rings in total."
+  },
+  "uranus": {
+    "name": "Uranus",
+    "distance": 2870658186,
+    "radius": 25362,
+    "orbit": 84.016846,
+    "velocity": 24477,
+    "volume": 68334355695584,
+    "gravity": 8.87,
+    "meanTemp": 0,
+    "moons": 27,
+    "funFact": "Uranus' rotation is set at a nearly 90-degree angle from its plane of orbit, making it seem to spin on its side."
+  },
+  "neptune": {
+    "name": "Neptune",
+    "distance": 4498396441,
+    "radius": 24622,
+    "orbit": 164.79132,
+    "velocity": 19556,
+    "volume": 	62525703987421,
+    "gravity": 	11.15,
+    "meanTemp": 0,
+    "moons": 14,
+    "funFact": "The most distant planet from the Sun (sorry Pluto), Neptune was the first planet located by mathematical calculations rather than telescope."
   }
 }
 

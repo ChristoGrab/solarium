@@ -18,6 +18,11 @@
   font-size: 20px;
   font-weight: bold;
   margin-right: 50px;
+  transition: 200ms all ease-out;
+}
+
+.planet-selector:hover {
+  color: whitesmoke;
 }
 
 .active {

@@ -5,6 +5,7 @@
   background: #13080e;
   border-right: 2px solid #e8ab8c;
   border-radius: 0 10px 10px 0;
+  padding-right: 8px;
   height: 100vh;
   display: flex;
   flex-direction: column;

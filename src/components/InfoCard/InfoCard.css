@@ -4,20 +4,23 @@
   right: 2%;
   background: #13080e;
   border: 2px solid #e8ab8c;
-  height: 70vh;
+  height: clamp(300px, 40vh, 600px);
   width: 340px;
   z-index: 1;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #e8ab8c inset;
   animation: fadeIn 2s;
   display: flex;
-  
+  flex-direction: column;
+  padding: 20px;
 }
 
 .infocard-title {
   margin: 20px;
-  font-size: 20px;
-  color: #e8ab8c;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .infocard-back-button {
@@ -27,3 +30,16 @@
   height: 40px;
   border-radius: 3px;
 }
+
+.infocard-field,
+.infocard-fact,
+.infocard-title {
+  color: #e8ab8c;
+}
+
+.infocard-fact {
+  margin-top: 50px;
+}
+
+
+

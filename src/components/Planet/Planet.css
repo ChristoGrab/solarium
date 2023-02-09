@@ -1,0 +1,82 @@
+.mercury, .venus, .earth, .mars, .saturn, .jupiter, .uranus, .neptune {
+  bottom: 10%;
+  left: 30%;
+  position: absolute;
+  z-index: 5;
+  border-radius: 50%;
+  animation: swoop 1s linear;
+}
+
+.mercury {
+  height: 260px;
+  width: 260px;
+  background: linear-gradient(to top right, black, rgb(70, 70, 70), white);
+  box-shadow: 3px -3px 7px whitesmoke;
+}
+
+.venus {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(to top right, black, rgb(255, 174, 0), white);
+  box-shadow: 4px -4px 10px rgb(255, 174, 0, .6);
+}
+
+.earth {
+  height: 360px;
+  width: 360px;
+  background-image: url('../../../public/earth.png');
+  background-position: 30% 20%;
+  box-shadow: 5px -5px 20px 10px rgb(250, 250, 250, .6);
+}
+
+.mars {
+  height: 320px;
+  width: 320px;
+  background: linear-gradient(to top right, black, rgb(255, 102, 0), rgb(233, 164, 35));
+  box-shadow: 2px -2px 5px 3px rgb(233, 164, 35, .6);
+}
+
+.jupiter {
+  height: 500px;
+  width: 500px;
+  background: linear-gradient(to top right, black, white, orange);
+  box-shadow: 3px -3px 10px 10px rgba(159, 158, 155, 0.6)
+}
+
+.saturn {
+  height: 470px;
+  width: 470px;
+  background: linear-gradient(to top right, black, #d5bd9b);
+  box-shadow: 3px -3px 8px 8px rgba(150, 150, 150, 0.5);
+}
+
+.uranus {
+  height: 450px;
+  width: 450px;
+  background: linear-gradient(to top right, black, #2b3235, #7d97a1);
+  box-shadow: 3px -3px 6px 6px hsl(197, 11%, 24%, 0.5);
+}
+
+.neptune {
+  height: 425px;
+  width: 425px;
+  background: linear-gradient(to top right, black, #141924, #718bca);
+  box-shadow: 2px -2px 5px 4px hsl(197, 11%, 24%, 0.5);
+}
+
+/* Entry Animation */
+
+@keyframes swoop {
+  0% {
+    bottom: 10%;
+    opacity: 0
+  }
+  50% {
+    bottom: 0;
+    opacity: 0
+  }
+  100% {
+    bottom: 10%;
+    opacity: 1
+  }
+}

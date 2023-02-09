@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import InfoCard from '../InfoCard'
 import "./Viewport.css"
+import Sun from "../Sun"
 
 const Viewport = () => {
 
   return (
     <div className="main-page-container">
-      <div className="title">Solarium v0.1</div>
-      <div className="creator">Made by Christo Grabowski</div>
+      <div className="title">Solarium v0.5</div>
+      <div className="creator">Made by
+        <a className="github-link" href="https://christograb.github.io" target="_blank" rel="noreferrer">Christo Grabowski</a>
+      </div>
+      <Sun />
     </div>
   )
 }

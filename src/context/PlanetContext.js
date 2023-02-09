@@ -4,11 +4,11 @@ export const PlanetContext = createContext();
 
 export default function PlanetProvider(props) {
 
-  const [ planetData, setPlanetData] = useState(null);
+  const [ planet, setPlanet] = useState('sun');
 
   return (
     <PlanetContext.Provider
-    value={{ planetData }}>
+    value={{ planet }}>
       {props.children}
     </PlanetContext.Provider>
   )

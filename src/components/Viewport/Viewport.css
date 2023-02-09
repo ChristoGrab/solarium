@@ -5,7 +5,7 @@
   top: 0;
   right: 0;
   background-image: url('../../../public/stars.jpg');
-  background-size: cover;
+  background-size: contain;
 }
 
 .title {

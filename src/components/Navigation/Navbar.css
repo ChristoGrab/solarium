@@ -4,12 +4,23 @@
   width: 15%;
   background: #13080e;
   border-right: 2px solid #e8ab8c;
+  border-radius: 0 10px 10px 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 7%;
   align-items: flex-end;
   justify-content: center;
+  z-index: 10;
+}
+
+@keyframes navbar-slide {
+  0% {
+    transform: translateX(-300px)
+  }
+  100% {
+    transform: translateX(0)
+  }
 }
 
 .planet-selector {
@@ -19,6 +30,7 @@
   font-weight: bold;
   margin-right: 50px;
   transition: 200ms all ease-out;
+  animation: 2s navbar-slide linear;
 }
 
 .planet-selector:hover {

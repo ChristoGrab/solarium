@@ -9,7 +9,7 @@ const Viewport = () => {
       <div className="creator">Made by
         <a className="github-link" href="https://christograb.github.io" target="_blank" rel="noreferrer">Christo Grabowski</a>
       </div>
-      <Sun />
+      {/* <Sun /> */}
     </div>
   )
 }

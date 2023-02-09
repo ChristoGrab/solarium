@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import "./Planet.css"
+import "./Planet.css";
+import Sun from '../Sun'
 
 const Planet = ({planet}) => {
   
@@ -8,6 +9,7 @@ const Planet = ({planet}) => {
   
   return (
     <>
+      <Sun planet={planet} />
       <div className={planet}>
         <div className="crater"></div>
       </div>

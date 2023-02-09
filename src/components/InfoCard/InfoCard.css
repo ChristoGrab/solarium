@@ -6,7 +6,7 @@
   border: 2px solid #e8ab8c;
   height: clamp(300px, 40vh, 600px);
   width: 340px;
-  z-index: 1;
+  z-index: 10;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #e8ab8c inset;
   animation: fadeIn 2s;

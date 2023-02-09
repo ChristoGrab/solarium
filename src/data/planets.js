@@ -18,7 +18,7 @@ const planetData = {
     "velocity": 126074,
     "volume": 60827208742,
     "gravity": 8.87,
-    "temperature": 462,
+    "temperature": [462, 462],
     "moons": null
   },
   "earth": {

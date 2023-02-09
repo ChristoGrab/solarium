@@ -9,39 +9,42 @@ const InfoCard = () => {
   
   const { planet } = useParams();
   const navigate = useNavigate();
+  const [planetStats, setPlanetStats] = useState("")
 
   const returnToMainMenu = async (e) => {
     e.preventDefault();
     console.log('hello')
     return navigate('/')
   }
+
+  useEffect(() => {
+    let currentPlanet = planetData[planet]
+    setPlanetStats(currentPlanet)
+  }, [planet])
   
   return (
     <>
     <Planet planet={planet}/>
     <section className="info-card">
       <div className="infocard-title">
-        {planetData.englishName}
+        {planetStats.name}
         <button className="infocard-back-button"
       onClick={returnToMainMenu}>Main</button>
       </div>
       <div className="infocard-field">
-        Mean radius: {planetData.meanRadius}
+        Average Orbital Distance: {planetStats.distance} km
       </div>
       <div className="infocard-field">
-        Average Temperature: {planetData.avgTemp} K / {convertTemp(planetData.avgTemp)} C
+        Equatorial radius: {planetStats.radius} km
+      </div>
+      {/* <div className="infocard-field">
+        Temperature High/Low: {planetStats.temperature}/{planetStats.temperature[0]} C
+      </div> */}
+      <div className="infocard-field">
+        Gravity: {planetStats.gravity} m/s
       </div>
       <div className="infocard-field">
-        Gravity: {planetData.gravity} m/s
-      </div>
-      <div className="infocard-field">
-        Mean radius: {planetData.meanRadius}
-      </div>
-      <div className="infocard-field">
-        Aphelion: {planetData.aphelion} km
-      </div>
-      <div className="infocard-field">
-        Perihelion: {planetData.perihelion} km
+        Moons: {planetStats?.moons ? (planetStats.moons.map(moon => <div>{moon}</div>)) : "None"}
       </div>
     </section>
     </>

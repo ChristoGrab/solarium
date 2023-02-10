@@ -11,14 +11,14 @@
   height: 260px;
   width: 260px;
   background: linear-gradient(to top right, black, rgb(70, 70, 70), white);
-  box-shadow: 3px -3px 7px whitesmoke;
+  box-shadow: .3em -.3em .5em #ccc, inset 1em -1em .5em #000;
 }
 
 .venus {
   height: 350px;
   width: 350px;
   background: linear-gradient(to top right, black, rgb(255, 174, 0), white);
-  box-shadow: 4px -4px 10px rgb(255, 174, 0, .6);
+  box-shadow: 4px -4px 10px rgb(255, 174, 0, .6), inset 1em -1em .5em #000;
 }
 
 .earth {
@@ -26,7 +26,7 @@
   width: 360px;
   background-image: url('../../../public/earth.png');
   background-position: 30% 20%;
-  box-shadow: 5px -5px 20px 10px rgb(250, 250, 250, .6);
+  box-shadow: 1em -.5em 1em 10px rgb(250, 250, 250, .6), inset 1em -1em .5em #000;
 }
 
 .mars {

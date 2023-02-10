@@ -11,7 +11,8 @@ const Planet = ({planet}) => {
     <>
       <Sun planet={planet} />
       <div className={planet}>
-        <div className="crater"></div>
+        <div className={`${planet}-clouds`} />
+        <div className={`${planet}-rings`} />
       </div>
     </>
   )

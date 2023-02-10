@@ -4,7 +4,7 @@
   height: 100vh;
   top: 0;
   right: 0;
-  background-image: url('../../../public/starry-night-sky.jpg');
+  background-image: url('../../../public/night-sky.webp');
   background-size: 150% 150%;
   animation: rotate 500s infinite linear;
 }

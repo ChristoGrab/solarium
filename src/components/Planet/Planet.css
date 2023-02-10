@@ -4,7 +4,7 @@
   position: absolute;
   z-index: 5;
   border-radius: 50%;
-  animation: swoop 1s linear;
+  transition: width 500ms linear, height 500ms linear;
 }
 
 .mercury {
@@ -26,57 +26,67 @@
   width: 360px;
   background-image: url('../../../public/earth.png');
   background-position: 30% 20%;
-  box-shadow: 1em -.5em 1em 10px rgb(250, 250, 250, .6), inset 1em -1em .5em #000;
+  box-shadow: 1em -.5em 1em 3px rgb(250, 250, 250, .6), inset 1em -1em .5em #000;
 }
 
 .mars {
   height: 320px;
   width: 320px;
   background: linear-gradient(to top right, black, rgb(255, 102, 0), rgb(233, 164, 35));
-  box-shadow: 2px -2px 5px 3px rgb(233, 164, 35, .6);
+  box-shadow: 2px -2px 5px 3px rgb(233, 164, 35, .6), inset 1em -1em .5em #000;
 }
 
 .jupiter {
   height: 500px;
   width: 500px;
-  background: linear-gradient(to top right, black, white, orange);
-  box-shadow: 3px -3px 10px 10px rgba(159, 158, 155, 0.6)
+  background: repeating-linear-gradient(to top, #a58876, #fdf0dc, #e09d6e, #fdf0dc, #a58876);
+  box-shadow: 3px -3px 10px 5px rgba(159, 158, 155, 0.6), inset 1em -1em .5em #000;
 }
+
+/* .jupiter::after {
+  content: "";
+  height: 35px;
+  width: 40px;
+  background: blue;
+  position: absolute;
+  top: 320px;
+  left: 100px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(#96694d, white), repeating-radial-gradient(#e09d6e, white)
+} */
 
 .saturn {
   height: 470px;
   width: 470px;
   background: linear-gradient(to top right, black, #d5bd9b);
-  box-shadow: 3px -3px 8px 8px rgba(150, 150, 150, 0.5);
+  box-shadow: 3px -3px 7px 4px rgba(150, 150, 150, 0.5), inset 1em -1em .5em #000;
+}
+
+.saturn::after {
+  height: 550px;
+  width: 550px;
+  content: "";
+  top: -16%;
+  left: -18%;
+  border: 50px solid silver;
+  outline: 50px solid silver;
+  outline-offset: 5px;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate3d(1, 0, 0, 70deg);
+  z-index: 0;
 }
 
 .uranus {
   height: 450px;
   width: 450px;
   background: linear-gradient(to top right, black, #2b3235, #7d97a1);
-  box-shadow: 3px -3px 6px 6px hsl(197, 11%, 24%, 0.5);
+  box-shadow: 3px -3px 6px 6px hsl(197, 11%, 24%, 0.5), inset 1em -1em .5em #000;
 }
 
 .neptune {
   height: 425px;
   width: 425px;
   background: linear-gradient(to top right, black, #141924, #718bca);
-  box-shadow: 2px -2px 5px 4px hsl(197, 11%, 24%, 0.5);
-}
-
-/* Entry Animation */
-
-@keyframes swoop {
-  0% {
-    bottom: 10%;
-    opacity: 0
-  }
-  50% {
-    bottom: 0;
-    opacity: 0
-  }
-  100% {
-    bottom: 10%;
-    opacity: 1
-  }
+  box-shadow: 2px -2px 5px 4px hsl(197, 11%, 24%, 0.5), inset 1em -1em .5em #000;
 }

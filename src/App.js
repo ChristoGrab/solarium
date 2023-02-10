@@ -12,6 +12,7 @@ function App() {
       <Navigation />
       <Viewport />
       <Routes>
+        {/* <Route path="/" element={<System />} /> */}
         <Route path="/:planet" element={<InfoCard />} />
       </Routes>
     </BrowserRouter>

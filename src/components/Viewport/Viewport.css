@@ -4,8 +4,15 @@
   height: 100vh;
   top: 0;
   right: 0;
-  background-image: url('../../../public/stars.jpg');
-  background-size: contain;
+  background-image: url('../../../public/starry-night-sky.jpg');
+  background-size: 150% 150%;
+  animation: rotate 500s infinite linear;
+}
+
+@keyframes rotate {
+  0% { background-position: 100% 0;}
+  50% { background-position: 0 0;}
+  100% { background-position: -100% 0;}
 }
 
 .title {

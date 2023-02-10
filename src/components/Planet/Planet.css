@@ -67,17 +67,33 @@
   box-shadow: 3px -3px 10px 5px rgba(159, 158, 155, 0.6), inset 1em -1em .5em #000;
 }
 
-/* .jupiter::after {
+.jupiter::after {
   content: "";
-  height: 35px;
-  width: 40px;
-  background: blue;
+  height: 50px;
+  width: 55px;
   position: absolute;
   top: 320px;
   left: 100px;
   border-radius: 50%;
-  background: repeating-linear-gradient(#96694d, white), repeating-radial-gradient(#e09d6e, white)
-} */
+  background: radial-gradient(#e8e8e8, #bc7849);
+  animation: storm 5s infinite linear, slowFade 1s linear;
+  border-style: groove #d98b16;
+}
+
+@keyframes storm {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes slowFade {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .saturn {
   height: 470px;

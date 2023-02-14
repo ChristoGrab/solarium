@@ -22,13 +22,15 @@
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: rgb(232, 232, 0);
+  box-shadow: -4px 2px 58px rgba(247, 212, 123, 0.7);
+  z-index: 2;
 }
 
 .mercury-orbit {
-  width: 7em;
-  height: 7em;
-  animation: orbit 12s infinite linear;
+  width: 5em;
+  height: 5em;
+  animation: orbit 880ms infinite linear;
 }
 
 .tiny-mercury {
@@ -40,9 +42,9 @@
 }
 
 .venus-orbit {
-  width: 10em;
-  height: 10em;
-  animation: orbit 14s infinite linear;
+  width: 7em;
+  height: 7em;
+  animation: orbit 2240ms infinite linear;
   position: absolute;
 }
 
@@ -53,9 +55,9 @@
 }
 
 .earth-orbit {
-  width: 15em;
-  height: 15em;
-  animation: orbit 20s infinite linear;
+  width: 10em;
+  height: 10em;
+  animation: orbit 3650ms infinite linear;
 }
 
 .tiny-earth {
@@ -65,9 +67,9 @@
 }
 
 .mars-orbit {
-  width: 20em;
-  height: 20em;
-  animation: orbit 24s infinite linear;
+  width: 14em;
+  height: 14em;
+  animation: orbit 6780ms infinite linear;
 }
 
 .tiny-mars {
@@ -79,7 +81,7 @@
 .jupiter-orbit {
   width: 25em;
   height: 25em;
-  animation: orbit 24s infinite linear;
+  animation: orbit 43310ms infinite linear;
 }
 
 .tiny-jupiter {
@@ -91,7 +93,7 @@
 .saturn-orbit {
   width: 30em;
   height: 30em;
-  animation: orbit 30s infinite linear;
+  animation: orbit 107470ms infinite linear;
 }
 
 .tiny-saturn {
@@ -103,12 +105,12 @@
 .uranus-orbit {
   width: 75vh;
   height: 75vh;
-  animation: orbit 45s infinite linear;
+  animation: orbit 305890ms infinite linear;
 }
 
 .tiny-uranus {
-  width: 4vh;
-  height: 4vh;
+  width: 4.2vh;
+  height: 4.2vh;
   background:rgb(16, 124, 145)
 }
 
@@ -116,7 +118,7 @@
 .neptune-orbit {
   height: 90vh;
   width: 90vh;
-  animation: orbit 60s infinite linear;
+  animation: orbit 598000ms infinite linear;
 }
 
 .tiny-neptune {

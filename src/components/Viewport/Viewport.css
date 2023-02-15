@@ -7,6 +7,8 @@
   background-image: url('../../../public/night-sky.webp');
   background-size: 150% 150%;
   animation: rotate 500s infinite linear;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @keyframes rotate {
@@ -20,8 +22,10 @@
   font-size: 48px;
   text-align: center;
   animation: fadeIn 3s;
-  z-index: 2;
+  z-index: 10;
   font-family: 'SpaceFont';
+  margin-right: 2%;
+  margin-top: .5em;
 }
 
 @font-face {
@@ -43,7 +47,7 @@
   font-size: 12px;
   text-align: center;
   animation: fadeIn 5s;
-  z-index: 2;
+  z-index: 10;
 }
 
 .github-link {

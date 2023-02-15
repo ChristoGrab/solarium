@@ -1,11 +1,11 @@
 .info-card {
   position: absolute;
-  top: 12%;
+  top: 15%;
   right: 2%;
   background: #13080e;
   border: 2px solid #e8ab8c;
-  height: clamp(300px, 40vh, 600px);
-  width: clamp(200px, 18%, 400px);
+  height: clamp(300px, 48vh, 600px);
+  width: clamp(200px, 20%, 400px);
   z-index: 10;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #e8ab8c inset;
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .infocard-title {
@@ -29,7 +30,15 @@
   border: none;
   color: white;
   height: 40px;
-  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 200ms all;
+}
+
+.infocard-back-button:hover {
+  background-color: white;
+  color: #e8ab8c;
 }
 
 .infocard-field,
@@ -42,5 +51,8 @@
   margin-top: 50px;
 }
 
+.bold {
+  font-weight: bold;
+}
 
 

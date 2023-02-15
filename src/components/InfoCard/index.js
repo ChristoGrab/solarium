@@ -38,7 +38,7 @@ const InfoCard = () => {
       <span className="bold">Equatorial radius:</span> {planetStats.radius} km
       </div>
       <div className="infocard-field">
-        <span className="bold">Mean Temperature:</span> {planetStats.meanTemp} C
+        <span className="bold">Mean Temperature:</span> {planetStats.meanTemp} ºC
       </div>
       <div className="infocard-field">
       <span className="bold">Gravity:</span> {planetStats.gravity} m/s

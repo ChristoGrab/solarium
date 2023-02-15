@@ -1,0 +1,67 @@
+.size-system {
+  height: 100%;
+  width: 100%;
+}
+
+.mercury-size, .venus-size, .earth-size, .mars-size,
+.jupiter-size, .saturn-size, .uranus-size, .neptune-size {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 22%;
+}
+
+.mercury-size {
+  height: calc(2439.7vw / 4000);
+  width: calc(2439.7vw / 4000);
+  background: grey;
+  left: 16%;
+}
+
+.venus-size {
+  height: calc(6051.8vw / 4000);
+  width: calc(6051.8vw / 4000);
+  background: green;
+  left: 18%;
+}
+
+.earth-size {
+  height: calc(6371vw / 4000);
+  width: calc(6371vw / 4000);
+  background: blue;
+  left: 22%;
+}
+
+.mars-size {
+  height: calc(3389.5vw / 4000);
+  width: calc(3389.5vw / 4000);
+  background: red;
+  left: 27%;
+}
+
+.jupiter-size {
+  height: calc(69911vw / 4000);
+  width: calc(69911vw / 4000);
+  background: orange;
+  left: 28%;
+}
+
+.saturn-size {
+  height: calc(58232vw / 4000);
+  width: calc(58232vw / 4000);
+  background: silver;
+  left: 49%;
+}
+
+.uranus-size {
+  height: calc(25362vw / 4000);
+  width: calc(25362vw / 4000);
+  background: blue;
+  left: 57%;
+}
+
+.neptune-size {
+  height: calc(24622vw / 4000);
+  width: calc(24622vw / 4000);
+  background: rgb(106, 106, 165);
+  left: 70%;
+}

@@ -2,8 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
 import InfoCard from "./components/InfoCard";
-import SolarSystem from "./components/SolarSystem"
-import PlanetProvider from "./context/PlanetContext";
+import SolarSystem from "./components/SolarSystem";
 
 function App() {
 

@@ -1,0 +1,18 @@
+.system-type-menu {
+  display: flex;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  width: clamp(200px, 300px, 400px);
+  justify-content: space-around;
+}
+
+.system-type-button {
+  width: 30%;
+  background: whitesmoke;
+  z-index: 10;
+}
+
+.system-type-button:hover {
+  cursor: pointer;
+}

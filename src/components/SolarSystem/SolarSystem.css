@@ -7,8 +7,8 @@
   position: relative;
 }
 
-.mercury-orbit, .venus-orbit, .earth-orbit, .mars-orbit, 
-.jupiter-orbit, .saturn-orbit, .uranus-orbit, .neptune-orbit {
+.mercury-path, .venus-path, .earth-path, .mars-path, 
+.jupiter-path, .saturn-path, .uranus-path, .neptune-path {
   border-radius: 50%;
   position: absolute;
   outline: 1px solid whitesmoke;
@@ -29,7 +29,7 @@
   z-index: 0;
 }
 
-.mercury-orbit {
+.mercury-path {
   width: 9vh;
   height: 9vh;
   animation: orbit 880ms infinite linear;
@@ -45,7 +45,7 @@
   transform: rotate(310deg);
 }
 
-.venus-orbit {
+.venus-path {
   width: 15vh;
   height: 15vh;
  animation: orbit 2240ms infinite linear; 
@@ -62,7 +62,7 @@
   transform: rotate(55deg);
 }
 
-.earth-orbit {
+.earth-path {
   width: 22vh;
   height: 22vh;
   animation: orbit 3650ms infinite linear;
@@ -78,7 +78,7 @@
   transform: rotate(325deg);
 }
 
-.mars-orbit {
+.mars-path {
   width: 30vh;
   height: 30vh;
   animation: orbit 6780ms infinite linear;
@@ -94,7 +94,7 @@
   transform: rotate(50deg);
 }
 
-.jupiter-orbit {
+.jupiter-path {
   width: 45vh;
   height: 45vh;
   animation: orbit 43310ms infinite linear;
@@ -110,7 +110,7 @@
   transform: rotate(305deg);
 }
 
-.saturn-orbit {
+.saturn-path {
   width: 65vh;
   height: 65vh;
   animation: orbit 107470ms infinite linear;
@@ -126,7 +126,7 @@
   transform: rotate(35deg);
 }
 
-.uranus-orbit {
+.uranus-path {
   width: 80vh;
   height: 80vh;
   animation: orbit 305890ms infinite linear;
@@ -142,8 +142,7 @@
   transform: rotate(310deg);
 }
 
-
-.neptune-orbit {
+.neptune-path {
   height: 95vh;
   width: 95vh;
   animation: orbit 598000ms infinite linear;

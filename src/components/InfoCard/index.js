@@ -29,22 +29,22 @@ const InfoCard = () => {
       <div className="infocard-title">
         {planetStats.name}
         <button className="infocard-back-button"
-      onClick={returnToMainMenu}>Main</button>
+      onClick={returnToMainMenu}>System View</button>
       </div>
       <div className="infocard-field">
-        Average Orbital Distance: {convertKmToAU(planetStats.distance)} AU
+        <span className="bold">Average Orbital Distance:</span> {convertKmToAU(planetStats.distance)} AU
       </div>
       <div className="infocard-field">
-        Equatorial radius: {planetStats.radius} km
-      </div>
-      {/* <div className="infocard-field">
-        Temperature High/Low: {planetStats.temperature}/{planetStats.temperature[0]} C
-      </div> */}
-      <div className="infocard-field">
-        Gravity: {planetStats.gravity} m/s
+      <span className="bold">Equatorial radius:</span> {planetStats.radius} km
       </div>
       <div className="infocard-field">
-        Moons: {planetStats.moons}
+        <span className="bold">Mean Temperature:</span> {planetStats.meanTemp} C
+      </div>
+      <div className="infocard-field">
+      <span className="bold">Gravity:</span> {planetStats.gravity} m/s
+      </div>
+      <div className="infocard-field">
+      <span className="bold">Moons:</span> {planetStats.moons}
       </div>
       <div className="infocard-fact">
         {planetStats.funFact}

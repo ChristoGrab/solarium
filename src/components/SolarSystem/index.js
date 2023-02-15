@@ -37,7 +37,7 @@ const SolarSystem = () => {
       <div className="neptune-orbit">
         <div className="tiny-neptune" />
       </div>
-      
+
       </div>
   )
 }

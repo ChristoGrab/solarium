@@ -1,7 +1,7 @@
 .navbar-container {
   position: absolute;
   top: 0;
-  width: 15%;
+  width: clamp(100px, 15%, 300px);
   background: #13080e;
   border-right: 2px solid #e8ab8c;
   border-radius: 0 10px 10px 0;
@@ -29,7 +29,7 @@
   color: #e8ab8c;
   font-size: 20px;
   font-weight: bold;
-  margin-right: 50px;
+  margin-right: clamp(20px, 50px, 50px);
   transition: 200ms all ease-out;
   animation: 2s navbar-slide linear;
   font-family: 'SpaceFont';

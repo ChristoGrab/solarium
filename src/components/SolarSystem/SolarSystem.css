@@ -10,8 +10,8 @@
 .mercury-orbit, .venus-orbit, .earth-orbit, .mars-orbit, 
 .jupiter-orbit, .saturn-orbit, .uranus-orbit, .neptune-orbit {
   border-radius: 50%;
-  border: 1px solid rgb(212, 205, 205);
   position: absolute;
+  outline: 1px solid whitesmoke;
 }
 
 .tiny-mercury, .tiny-venus, .tiny-earth, .tiny-mars,
@@ -26,13 +26,14 @@
   border-radius: 50%;
   background-color: rgb(232, 232, 0);
   box-shadow: -4px 2px 58px rgba(247, 212, 123, 0.7);
-  z-index: 2;
+  z-index: 0;
 }
 
 .mercury-orbit {
   width: 9vh;
   height: 9vh;
   animation: orbit 880ms infinite linear;
+  outline-offset: -5px;
 }
 
 .tiny-mercury {
@@ -46,6 +47,7 @@
   width: 15vh;
   height: 15vh;
   animation: orbit 2240ms infinite linear;
+  outline-offset: -1vh;
   position: absolute;
 }
 
@@ -53,39 +55,42 @@
   background: green;
   width: 2vh;
   height: 2vh;
-  top: 50%;
+  left: 50%;
 }
 
 .earth-orbit {
   width: 22vh;
   height: 22vh;
   animation: orbit 3650ms infinite linear;
+  outline-offset: -1vh;
 }
 
 .tiny-earth {
   background: blue;
   width: 2vh;
   height: 2vh;
-  top: 50%;
+  bottom: 50%;
 }
 
 .mars-orbit {
   width: 30vh;
   height: 30vh;
   animation: orbit 6780ms infinite linear;
+  outline-offset: -1vh;
 }
 
 .tiny-mars {
   background: red;
   width: 2vh;
   height: 2vh;
-  top: 50%;
+  right: 50%;
 }
 
 .jupiter-orbit {
   width: 45vh;
   height: 45vh;
   animation: orbit 43310ms infinite linear;
+  outline-offset: -2.5vh;
 }
 
 .tiny-jupiter {
@@ -99,26 +104,28 @@
   width: 65vh;
   height: 65vh;
   animation: orbit 107470ms infinite linear;
+  outline-offset: -2.25vh;
 }
 
 .tiny-saturn {
   background: rgb(104, 98, 83);
   width: 4.5vh;
   height: 4.5vh;
-  top: 50%;
+  right: 50%;
 }
 
 .uranus-orbit {
   width: 80vh;
   height: 80vh;
   animation: orbit 305890ms infinite linear;
+  outline-offset: -2.1vh;
 }
 
 .tiny-uranus {
   width: 4.2vh;
   height: 4.2vh;
   background:rgb(16, 124, 145);
-  top: 50%;
+  bottom: 50%;
 }
 
 
@@ -126,6 +133,7 @@
   height: 95vh;
   width: 95vh;
   animation: orbit 598000ms infinite linear;
+  outline-offset: -2vh;
 }
 
 .tiny-neptune {
@@ -133,10 +141,8 @@
   height: 4vh;
   background: blue;
   border-radius: 50%;
-  top: 50%;
+  right: 50%;
 }
-
-
 
 @keyframes orbit {
   0% { transform: rotate(0deg) }

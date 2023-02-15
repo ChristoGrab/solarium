@@ -40,7 +40,6 @@ const SolarSystem = () => {
       
       </div>
   )
-
 }
 
 export default SolarSystem

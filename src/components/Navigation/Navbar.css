@@ -32,6 +32,7 @@
   margin-right: 50px;
   transition: 200ms all ease-out;
   animation: 2s navbar-slide linear;
+  font-family: 'SpaceFont';
 }
 
 .planet-selector:hover {

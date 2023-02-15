@@ -1,6 +1,6 @@
 .main-page-container {
   position: absolute;
-  width: 85%;
+  width: 100%;
   height: 100vh;
   top: 0;
   right: 0;
@@ -15,13 +15,18 @@
   100% { background-position: -100% 0;}
 }
 
-
-
 .title {
   color: #e8ab8c;
   font-size: 48px;
   text-align: center;
   animation: fadeIn 3s;
+  z-index: 2;
+  font-family: 'SpaceFont';
+}
+
+@font-face {
+  font-family: 'SpaceFont';
+  src: url('../../../public/MandatoryPlaything-nRRd0.ttf')
 }
 
 @keyframes fadeIn{
@@ -38,6 +43,7 @@
   font-size: 12px;
   text-align: center;
   animation: fadeIn 5s;
+  z-index: 2;
 }
 
 .github-link {

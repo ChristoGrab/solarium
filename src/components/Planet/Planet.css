@@ -72,8 +72,8 @@
   height: 50px;
   width: 55px;
   position: absolute;
-  top: 320px;
-  left: 100px;
+  top: 32vh;
+  left: 10vh;
   border-radius: 50%;
   background: radial-gradient(#e8e8e8, #bc7849);
   animation: storm 5s infinite linear, slowFade 1s linear;
@@ -107,8 +107,8 @@
   height: 55vh;
   width: 55vh;
   content: "";
-  top: -19%;
-  left: -19%;
+  top: calc(47vh * -.2);
+  left: calc(47vh * -.2);
   border: 50px solid silver;
   outline: 50px solid silver;
   outline-offset: 5px;

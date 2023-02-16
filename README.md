@@ -10,8 +10,8 @@ The landing page contains a model of each planet's relative orbital period.  Not
 
 ## Current Features
 
--To-scale solar system views for relative orbit speeds, planet sizes, and distances from sun
--Separate pages for each planet with some extra data
+- To-scale solar system views for relative orbit speeds, planet sizes, and distances from sun
+- Separate pages for each planet with some extra data
 
 ## Planned Features
 

@@ -11,3 +11,14 @@ body {
 button:hover {
   cursor: pointer;
 }
+
+:root {
+  --space-orange: #e8ab8c;
+  --mercury-background: linear-gradient(to top right, black, rgb(70, 70, 70), white);
+  --venus-background: linear-gradient(to top right, black, rgb(255, 174, 0), white);
+  --mars-background: linear-gradient(to top right, black, rgb(255, 102, 0), rgb(233, 164, 35));
+  --jupiter-background: repeating-linear-gradient(to top, #a58876, #fdf0dc, #e09d6e, #fdf0dc, #a58876);
+  --saturn-background: linear-gradient(to top right, black, #d5bd9b);
+  --uranus-background: linear-gradient(to top right, black, #2b3235, #7d97a1);
+  --neptune-background: linear-gradient(to top right, black, #141924, #718bca);
+}

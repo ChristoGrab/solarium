@@ -9,8 +9,17 @@
 
 .system-type-button {
   width: 30%;
-  background: whitesmoke;
+  background: none;
+  border: none;
   z-index: 10;
+  font-family: 'SpaceFont';
+  color: var(--space-orange);
+  transition: 180ms color linear;
+  font-size: 1.5em;
+}
+
+.system-type-button:hover {
+  color: whitesmoke;
 }
 
 .system-type-button:hover {

@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
 import InfoCard from "./components/InfoCard";
 import SolarSystem from "./components/SolarSystem";
+import "./index.css";
 
 function App() {
 

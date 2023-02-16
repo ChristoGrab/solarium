@@ -1,67 +1,77 @@
 .size-system {
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 85%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.mercury-size, .venus-size, .earth-size, .mars-size,
+.sun-size, .mercury-size, .venus-size, .earth-size, .mars-size,
 .jupiter-size, .saturn-size, .uranus-size, .neptune-size {
   border-radius: 50%;
+  z-index: 20;
+  transform: rotate(225deg);
+  box-shadow: inset 1px 1px 10px black;
+}
+
+.sun-size {
+  height: calc(695508vw / 4000);
+  width: calc(695508vw / 4000);
+  background: radial-gradient(white, rgb(228, 231, 22), rgb(255, 224, 48));
   position: absolute;
-  bottom: 22%;
+  right: 97%;
+  z-index: 0;
+  box-shadow: 10px 10px 100px yellow;
 }
 
 .mercury-size {
   height: calc(2439.7vw / 4000);
   width: calc(2439.7vw / 4000);
-  background: grey;
-  left: 16%;
+  background: var(--mercury-background);
+  transform: rotate(220deg);
 }
 
 .venus-size {
   height: calc(6051.8vw / 4000);
   width: calc(6051.8vw / 4000);
-  background: green;
-  left: 18%;
+  background: var(--venus-background);
 }
 
 .earth-size {
   height: calc(6371vw / 4000);
   width: calc(6371vw / 4000);
   background: blue;
-  left: 22%;
 }
 
 .mars-size {
   height: calc(3389.5vw / 4000);
   width: calc(3389.5vw / 4000);
-  background: red;
-  left: 27%;
+  background: var(--mars-background);
 }
 
 .jupiter-size {
   height: calc(69911vw / 4000);
   width: calc(69911vw / 4000);
-  background: orange;
-  left: 28%;
+  background: var(--jupiter-background);
+  transform: rotate(0deg)
 }
 
 .saturn-size {
   height: calc(58232vw / 4000);
   width: calc(58232vw / 4000);
-  background: silver;
-  left: 49%;
+  background: var(--saturn-background);
 }
 
 .uranus-size {
   height: calc(25362vw / 4000);
   width: calc(25362vw / 4000);
-  background: blue;
-  left: 57%;
+  background: var(--uranus-background);
 }
 
 .neptune-size {
   height: calc(24622vw / 4000);
   width: calc(24622vw / 4000);
-  background: rgb(106, 106, 165);
-  left: 70%;
+  background: var(--neptune-background);
 }

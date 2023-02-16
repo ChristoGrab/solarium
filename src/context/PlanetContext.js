@@ -1,15 +1,15 @@
 import { createContext, useState } from "react";
 
-export const PlanetContext = createContext();
+export const SystemContext = createContext();
 
-export default function PlanetProvider(props) {
+export default function SystemProvider(props) {
 
-  const [ planet, setPlanet] = useState('sun');
+  const [ systemView, setSystemView] = useState('orbit');
 
   return (
-    <PlanetContext.Provider
-    value={{ planet }}>
+    <SystemContext.Provider
+    value={{ systemView, setSystemView }}>
       {props.children}
-    </PlanetContext.Provider>
+    </SystemContext.Provider>
   )
 }

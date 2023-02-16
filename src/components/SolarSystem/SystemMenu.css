@@ -1,0 +1,27 @@
+.system-type-menu {
+  display: flex;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  width: clamp(200px, 300px, 400px);
+  justify-content: space-around;
+}
+
+.system-type-button {
+  width: 30%;
+  background: none;
+  border: none;
+  z-index: 10;
+  font-family: 'SpaceFont';
+  color: var(--space-orange);
+  transition: 180ms color linear;
+  font-size: 1.5em;
+}
+
+.system-type-button:hover {
+  color: whitesmoke;
+}
+
+.system-type-button:hover {
+  cursor: pointer;
+}

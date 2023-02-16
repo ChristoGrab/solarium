@@ -9,7 +9,7 @@ const planetData = {
     "gravity": 3.7,
     "meanTemp": 167,
     "moons": 0,
-    "funFact": "Mercury is the smallest planet in our solar system."
+    "funFact": "Mercury is the smallest planet in our solar system, only slightly larger than Earth's moon."
   },
   "venus": {
     "name": "Venus",
@@ -25,7 +25,7 @@ const planetData = {
   },
   "earth": {
     "name": "Earth",
-    "distance": 	149598262,
+    "distance": 149598262,
     "radius": 6371,
     "orbit": 1.0000174,
     "velocity": 107218,

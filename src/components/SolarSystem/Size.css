@@ -1,0 +1,88 @@
+.size-system {
+  position: absolute;
+  height: 100%;
+  width: 85%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sun-size, .mercury-size, .venus-size, .earth-size, .mars-size,
+.jupiter-size, .saturn-size, .uranus-size, .neptune-size {
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.sun-size {
+  height: calc(695508vw / 4000);
+  width: calc(695508vw / 4000);
+  background: radial-gradient(white, rgb(228, 231, 22), rgb(255, 224, 48));
+  position: absolute;
+  right: 97%;
+  z-index: 0;
+  box-shadow: 10px 10px 100px yellow;
+}
+
+.mercury-size {
+  height: calc(2439.7vw / 4000);
+  width: calc(2439.7vw / 4000);
+  background: var(--mercury-background);
+  transform: rotate(220deg);
+}
+
+.venus-size {
+  height: calc(6051.8vw / 4000);
+  width: calc(6051.8vw / 4000);
+  background: var(--venus-background);
+  transform: rotate(220deg);
+  box-shadow: inset 2px -2px 5px 2px black;
+}
+
+.earth-size {
+  height: calc(6371vw / 4000);
+  width: calc(6371vw / 4000);
+  background-image: var(--earth-background);
+  background-size: 150%;
+  background-position: 50% 20%;
+  box-shadow: inset -1px 1px 5px 2px black;
+}
+
+.mars-size {
+  height: calc(3389.5vw / 4000);
+  width: calc(3389.5vw / 4000);
+  background: var(--mars-background);
+  transform: rotate(220deg);
+  box-shadow: inset 1px 1px 5px black;
+}
+
+.jupiter-size {
+  height: calc(69911vw / 4000);
+  width: calc(69911vw / 4000);
+  background: var(--jupiter-background);
+  box-shadow: inset -10px 1px 20px 10px black;
+}
+
+.saturn-size {
+  height: calc(58232vw / 4000);
+  width: calc(58232vw / 4000);
+  background: var(--saturn-background);
+  transform: rotate(225deg);
+  box-shadow: inset 8px -3px 20px 10px black;
+}
+
+.uranus-size {
+  height: calc(25362vw / 4000);
+  width: calc(25362vw / 4000);
+  background: var(--uranus-background);
+  transform: rotate(225deg);
+  box-shadow: inset 5px -5px 19px 5px black;
+}
+
+.neptune-size {
+  height: calc(24622vw / 4000);
+  width: calc(24622vw / 4000);
+  background: var(--neptune-background);
+  transform: rotate(225deg);
+  box-shadow: inset 5px -5px 19px 5px black;
+}

@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import PlanetProvider from './context/PlanetContext';
+import SystemProvider from './context/PlanetContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PlanetProvider>
+    <SystemProvider>
     <App />
-    </PlanetProvider>
+    </SystemProvider>
   </React.StrictMode>
 );

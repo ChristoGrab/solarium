@@ -1,0 +1,79 @@
+.distance-system {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  margin-left: 16%;
+  display: grid;
+  grid-template-columns: 0.4fr 0.3fr 0.3fr 0.5fr 4.2fr 4.7fr 10.3fr 10.3fr;
+  align-items: center;
+}
+
+.distance-mercury, .distance-venus, .distance-earth, .distance-mars,
+.distance-jupiter, .distance-saturn, .distance-uranus, .distance-neptune {
+  z-index: 20;
+  justify-self: flex-end;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.distance-mercury::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  z-index: -2;
+  bottom: 50px;
+  right: 100px;
+  border-radius: 50%;
+}
+
+.distance-mercury {
+  background: var(--mercury-background);
+  height: 5px;
+  width: 5px;
+  z-index: 5;
+}
+
+.distance-venus {
+  background: var(--venus-background);
+  height: 10px;
+  width: 10px;
+}
+
+.distance-earth {
+  background: var(--earth-background);
+  height: 10px;
+  width: 10px;
+}
+
+.distance-mars {
+  background: var(--mars-background);
+  height: 8px;
+  width: 8px;
+}
+
+.distance-jupiter {
+  background: var(--jupiter-background);
+  height: 50px;
+  width: 50px;
+}
+
+.distance-saturn {
+  background: var(--saturn-background);
+  height: 50px;
+  width: 50px;
+}
+
+.distance-uranus {
+  background: var(--uranus-background);
+  height: 40px;
+  width: 40px;
+}
+
+.distance-neptune {
+  background: var(--neptune-background);
+  height: 40px;
+  width: 40px;
+}

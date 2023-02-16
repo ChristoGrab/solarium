@@ -4,12 +4,11 @@ import { useContext } from 'react'
 
 const SystemMenu = () => {
   
-  const { systemView, setSystemView } = useContext(SystemContext)
+  const { setSystemView } = useContext(SystemContext)
   
   const viewOrbit = (e) => {
     e.preventDefault();
 
-    console.log(systemView)
     setSystemView("orbit")
   }
   

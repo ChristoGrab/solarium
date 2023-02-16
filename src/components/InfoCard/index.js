@@ -13,7 +13,6 @@ const InfoCard = () => {
 
   const returnToMainMenu = async (e) => {
     e.preventDefault();
-    console.log('hello')
     return navigate('/')
   }
 

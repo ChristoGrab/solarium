@@ -37,7 +37,7 @@
 }
 
 .tiny-mercury {
-  background: grey;
+  background: var(--mercury-background);
   width: 10px;
   height: 10px;
   top: 50%;
@@ -54,7 +54,7 @@
 }
 
 .tiny-venus {
-  background: green;
+  background: var(--venus-background);
   width: 2vh;
   height: 2vh;
   left: 50%;
@@ -70,7 +70,8 @@
 }
 
 .tiny-earth {
-  background: blue;
+  background-image: var(--earth-background);
+  background-size: 150%;
   width: 2vh;
   height: 2vh;
   bottom: 50%;
@@ -86,7 +87,7 @@
 }
 
 .tiny-mars {
-  background: red;
+  background: var(--mars-background);
   width: 2vh;
   height: 2vh;
   right: 50%;
@@ -102,7 +103,7 @@
 }
 
 .tiny-jupiter {
-  background: rgb(255, 187, 0);
+  background: var(--jupiter-background);
   width: 5vh;
   height: 5vh;
   top: 50%;
@@ -118,7 +119,7 @@
 }
 
 .tiny-saturn {
-  background: rgb(104, 98, 83);
+  background: var(--saturn-background);
   width: 4.5vh;
   height: 4.5vh;
   right: 50%;
@@ -136,7 +137,7 @@
 .tiny-uranus {
   width: 4.2vh;
   height: 4.2vh;
-  background:rgb(16, 124, 145);
+  background: var(--uranus-background);
   bottom: 50%;
   box-shadow: inset 5px 5px 5px black;
   transform: rotate(310deg);
@@ -152,10 +153,10 @@
 .tiny-neptune {
   width: 4vh;
   height: 4vh;
-  background: blue;
+  background: var(--neptune-background);
   border-radius: 50%;
   right: 50%;
-  box-shadow: inset 5px 5px 5px black;
+  box-shadow: inset 1px 2px 1px black;
   transform: rotate(40deg);
 }
 

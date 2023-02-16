@@ -1,4 +1,4 @@
-import './SolarSystem.css'
+import './Orbit.css'
 
 const Orbit = () => {
   

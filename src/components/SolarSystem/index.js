@@ -1,4 +1,3 @@
-import "./SolarSystem.css"
 import {SystemContext} from '../../context/PlanetContext'
 import Orbit from './Orbit'
 import Size from './Size'

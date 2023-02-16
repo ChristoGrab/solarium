@@ -9,7 +9,7 @@
   z-index: 10;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #e8ab8c inset;
-  animation: fadeIn 2s;
+  animation: fadeIn 2s linear;
   display: flex;
   flex-direction: column;
   padding: 20px;

@@ -12,8 +12,6 @@
 .jupiter-size, .saturn-size, .uranus-size, .neptune-size {
   border-radius: 50%;
   z-index: 20;
-  transform: rotate(225deg);
-  box-shadow: inset 1px 1px 10px black;
 }
 
 .sun-size {
@@ -42,7 +40,9 @@
 .earth-size {
   height: calc(6371vw / 4000);
   width: calc(6371vw / 4000);
-  background: blue;
+  background-image: var(--earth-background);
+  background-size: 150%;
+  background-position: 50% 20%;
 }
 
 .mars-size {
@@ -55,7 +55,6 @@
   height: calc(69911vw / 4000);
   width: calc(69911vw / 4000);
   background: var(--jupiter-background);
-  transform: rotate(0deg)
 }
 
 .saturn-size {

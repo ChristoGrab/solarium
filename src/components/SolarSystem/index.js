@@ -2,6 +2,7 @@ import "./SolarSystem.css"
 import {SystemContext} from '../../context/PlanetContext'
 import Orbit from './Orbit'
 import Size from './Size'
+import Distance from './Distance'
 import SystemMenu from './SystemMenu'
 import { useContext, useEffect, useState } from 'react'
 
@@ -30,12 +31,12 @@ const SolarSystem = () => {
     </> 
   )
   
-  // if (systemType === "distance") return (
-  //   <>
-  //   <Distance />
-  //   <SystemMenu />
-  //   </>
-  // )
+  if (systemType === "distance") return (
+    <>
+    <Distance />
+    <SystemMenu />
+    </>
+  )
 }
 
 export default SolarSystem

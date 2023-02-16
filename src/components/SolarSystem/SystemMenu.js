@@ -31,8 +31,8 @@ const SystemMenu = () => {
     onClick={viewOrbit}>Orbit</button>
     <button className="system-type-button"
     onClick={viewSize}>Size</button>
-    {/* <button className="system-type-button"
-    onClick={viewDistance}>Distance</button> */}
+    <button className="system-type-button"
+    onClick={viewDistance}>Distance</button>
     </div>
   )
 }

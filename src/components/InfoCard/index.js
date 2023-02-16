@@ -29,7 +29,7 @@ const InfoCard = () => {
       <div className="infocard-title">
         {planetStats.name}
         <button className="infocard-back-button"
-      onClick={returnToMainMenu}>System View</button>
+      onClick={returnToMainMenu}>Back</button>
       </div>
       <div className="infocard-field">
         <span className="bold">Average Orbital Distance:</span> {convertKmToAU(planetStats.distance)} AU

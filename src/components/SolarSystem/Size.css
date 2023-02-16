@@ -67,19 +67,22 @@
   height: calc(58232vw / 4000);
   width: calc(58232vw / 4000);
   background: var(--saturn-background);
-  transform: rotate(225deg)
+  transform: rotate(225deg);
+  box-shadow: inset 8px -3px 20px 10px black;
 }
 
 .uranus-size {
   height: calc(25362vw / 4000);
   width: calc(25362vw / 4000);
   background: var(--uranus-background);
-  transform: rotate(225deg)
+  transform: rotate(225deg);
+  box-shadow: inset 5px -5px 19px 5px black;
 }
 
 .neptune-size {
   height: calc(24622vw / 4000);
   width: calc(24622vw / 4000);
   background: var(--neptune-background);
-  transform: rotate(225deg)
+  transform: rotate(225deg);
+  box-shadow: inset 5px -5px 19px 5px black;
 }

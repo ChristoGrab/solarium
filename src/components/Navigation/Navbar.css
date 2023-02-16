@@ -29,7 +29,7 @@
   color: #e8ab8c;
   font-size: 1.3em;
   font-weight: bold;
-  margin-right: clamp(20px, 50px, 50px);
+  margin-right: clamp(20px, 10%, 50px);
   transition: 200ms all ease-out;
   animation: 2s navbar-slide linear;
   font-family: 'SpaceFont';

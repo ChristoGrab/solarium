@@ -11,21 +11,21 @@
 .mercury {
   height: 26vh;
   width: 26vh;
-  background: linear-gradient(to top right, black, rgb(70, 70, 70), white);
+  background: var(--mercury-background);
   box-shadow: .3em -.3em .5em #ccc, inset 1em -1em .5em #000;
 }
 
 .venus {
   height: 35vh;
   width: 35vh;
-  background: linear-gradient(to top right, black, rgb(255, 174, 0), white);
+  background: var(--venus-background);
   box-shadow: 4px -4px 10px rgb(255, 174, 0, .6), inset 1em -1em .5em #000;
 }
 
 .earth {
   height: 36vh;
   width: 36vh;
-  background-image: url('../../../public/earth.png');
+  background: var(--earth-background);
   background-position: 30% 20%;
   box-shadow: 1em -.5em 1em 3px rgb(250, 250, 250, .6), inset 1em -1em .5em #000;
 }
@@ -57,14 +57,14 @@
 .mars {
   height: 32vh;
   width: 32vh;
-  background: linear-gradient(to top right, black, rgb(255, 102, 0), rgb(233, 164, 35));
+  background: var(--mars-background);
   box-shadow: 2px -2px 5px 3px rgb(233, 164, 35, .6), inset 1em -1em .5em #000;
 }
 
 .jupiter {
   height: 50vh;
   width: 50vh;
-  background: repeating-linear-gradient(to top, #a58876, #fdf0dc, #e09d6e, #fdf0dc, #a58876);
+  background: var(--jupiter-background);
   box-shadow: 3px -3px 10px 5px rgba(159, 158, 155, 0.6), inset 1em -1em .5em #000;
 }
 
@@ -99,7 +99,7 @@
 .saturn {
   height: 47vh;
   width: 47vh;
-  background: linear-gradient(to top right, black, #d5bd9b);
+  background: var(--saturn-background);
   box-shadow: 3px -3px 7px 4px rgba(150, 150, 150, 0.5), inset 1em -1em .5em #000;
   transform-style: preserve-3d;
 }
@@ -123,13 +123,13 @@
 .uranus {
   height: 45vh;
   width: 45vh;
-  background: linear-gradient(to top right, black, #2b3235, #7d97a1);
+  background: var(--uranus-background);
   box-shadow: 3px -3px 6px 6px hsl(197, 11%, 24%, 0.5), inset 1em -1em .5em #000;
 }
 
 .neptune {
   height: 43vh;
   width: 43vh;
-  background: linear-gradient(to top right, black, #141924, #718bca);
+  background: var(--neptune-background);
   box-shadow: 2px -2px 5px 4px hsl(197, 11%, 24%, 0.5), inset 1em -1em .5em #000;
 }

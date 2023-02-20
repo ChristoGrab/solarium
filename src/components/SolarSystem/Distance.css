@@ -46,6 +46,8 @@
   background: var(--earth-background);
   height: 10px;
   width: 10px;
+  background-size: 150%;
+  background-position: 20% 30%;
 }
 
 .distance-mars {
@@ -58,22 +60,29 @@
   background: var(--jupiter-background);
   height: 50px;
   width: 50px;
+  box-shadow: inset -5px 1px 5px black;
 }
 
 .distance-saturn {
   background: var(--saturn-background);
   height: 50px;
   width: 50px;
+  box-shadow: inset 5px -1px 5px black;
+  transform: rotate(225deg);
 }
 
 .distance-uranus {
   background: var(--uranus-background);
   height: 40px;
   width: 40px;
+  transform: rotate(225deg);
+  box-shadow: inset 5px -1px 4px black;
 }
 
 .distance-neptune {
   background: var(--neptune-background);
   height: 40px;
   width: 40px;
+  transform: rotate(225deg);
+  box-shadow: inset 1px -1px 5px black;
 }

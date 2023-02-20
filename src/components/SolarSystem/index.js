@@ -13,7 +13,6 @@ const SolarSystem = () => {
   
   useEffect(() => {
     setSystemType(systemView)
-    console.log(systemView)
 }, [systemView])
   
   if (systemType === "orbit") return (

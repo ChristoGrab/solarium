@@ -28,5 +28,15 @@ const dwarfData = {
     "volume": null,
     "gravity": 0.28,
     "moons": 0
+  },
+  "haumea": {
+    "name": "Haumea",
+    "distance": 6432011461,
+    "radius": 620,
+    "orbit": 285,
+    "velocity": 16191,
+    "volume": null,
+    "gravity": null,
+    "moons": 2
   }
 }

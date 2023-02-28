@@ -18,5 +18,15 @@ const dwarfData = {
     "volume": 452331448,
     "gravity": 0.28,
     "moons": 0
+  },
+  "makemake": {
+    "name": "Makemake",
+    "distance": 6783345606,
+    "radius": 715,
+    "orbit": 305.34,
+    "velocity": 15816,
+    "volume": null,
+    "gravity": 0.28,
+    "moons": 0
   }
 }

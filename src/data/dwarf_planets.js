@@ -26,7 +26,7 @@ const dwarfData = {
     "orbit": 305.34,
     "velocity": 15816,
     "volume": null,
-    "gravity": 0.28,
+    "gravity": 0.4,
     "moons": 0
   },
   "haumea": {
@@ -36,7 +36,17 @@ const dwarfData = {
     "orbit": 285,
     "velocity": 16191,
     "volume": null,
-    "gravity": null,
+    "gravity": 0.35,
     "moons": 2
+  },
+  "eris": {
+    "name": "Eris",
+    "distance": 10180122852,
+    "radius": 1163,
+    "orbit": 557,
+    "velocity": 12364,
+    "volume": null,
+    "gravity": 0.77,
+    "moons": 1
   }
 }

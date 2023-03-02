@@ -36,7 +36,7 @@
   width: calc(6051.8vw / 4000);
   background: var(--venus-background);
   transform: rotate(220deg);
-  box-shadow: inset 2px -2px 5px 2px black;
+  box-shadow: inset 2px -2px 5px .1em black;
 }
 
 .earth-size {
@@ -45,7 +45,7 @@
   background-image: var(--earth-background);
   background-size: 150%;
   background-position: 50% 20%;
-  box-shadow: inset -1px 1px 5px 2px black;
+  box-shadow: inset -1px 1px 4px .1em black;
 }
 
 .mars-size {
@@ -53,14 +53,14 @@
   width: calc(3389.5vw / 4000);
   background: var(--mars-background);
   transform: rotate(220deg);
-  box-shadow: inset 1px 1px 5px black;
+  box-shadow: inset 1px 1px .1em black;
 }
 
 .jupiter-size {
   height: calc(69911vw / 4000);
   width: calc(69911vw / 4000);
   background: var(--jupiter-background);
-  box-shadow: inset -10px 1px 20px 10px black;
+  box-shadow: inset -10px 1px 15px 10px black;
 }
 
 .saturn-size {
@@ -68,7 +68,7 @@
   width: calc(58232vw / 4000);
   background: var(--saturn-background);
   transform: rotate(225deg);
-  box-shadow: inset 8px -3px 20px 10px black;
+  box-shadow: inset 8px -3px 15px 10px black;
 }
 
 .uranus-size {
@@ -76,7 +76,7 @@
   width: calc(25362vw / 4000);
   background: var(--uranus-background);
   transform: rotate(225deg);
-  box-shadow: inset 5px -5px 19px 5px black;
+  box-shadow: inset 5px -5px 10px 5px black;
 }
 
 .neptune-size {
@@ -84,5 +84,5 @@
   width: calc(24622vw / 4000);
   background: var(--neptune-background);
   transform: rotate(225deg);
-  box-shadow: inset 5px -5px 19px 5px black;
+  box-shadow: inset 5px -5px 10px 3px black;
 }

@@ -12,6 +12,7 @@ const Size = () => {
       <div className="saturn-size" />
       <div className="uranus-size" />
       <div className="neptune-size" />
+      <div className="name-tag">Neptune</div>
     </div>
   )
 }

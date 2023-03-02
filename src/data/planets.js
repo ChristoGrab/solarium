@@ -30,7 +30,7 @@ const planetData = {
     "orbit": 1.0000174,
     "velocity": 107218,
     "volume": 1083206916846,
-    "gravity": 9.80665,
+    "gravity": 9.81,
     "meanTemp": 15,
     "moons": 1,
     "funFact": "Earth is the only planet in the solar system with liquid water on the surface. In fact, 71% of its surface is water-covered."

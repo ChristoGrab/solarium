@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  animation: fadeIn 1500ms linear;
 }
 
 .sun-size, .mercury-size, .venus-size, .earth-size, .mars-size,

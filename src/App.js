@@ -17,9 +17,6 @@ function App() {
         <Route path="/" exact element={<SolarSystem />} />
       </Routes>
       <Routes>
-        <Route path="/sun" exact element={<Sun />} />
-      </Routes>
-      <Routes>
         <Route path="/:planet" element={<InfoCard />} />
       </Routes>
     </BrowserRouter>

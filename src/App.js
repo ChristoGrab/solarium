@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
 import InfoCard from "./components/InfoCard";
 import SolarSystem from "./components/SolarSystem";
+import Sun from './components/Sun'
 import "./index.css";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       <Viewport />
       <Routes>
         <Route path="/" exact element={<SolarSystem />} />
+      </Routes>
+      <Routes>
+        <Route path="/sun" exact element={<Sun />} />
       </Routes>
       <Routes>
         <Route path="/:planet" element={<InfoCard />} />

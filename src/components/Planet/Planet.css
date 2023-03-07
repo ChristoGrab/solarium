@@ -5,7 +5,7 @@
   z-index: 5;
   border-radius: 50%;
   transition: width 500ms linear, height 500ms linear;
-  animation: zoom-in 2100ms linear;
+  animation: zoom-in 1s linear;
 }
 
 .mercury {

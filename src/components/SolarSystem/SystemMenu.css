@@ -25,3 +25,9 @@
 .system-type-button:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .system-type-menu {
+    display: none;
+  }
+}

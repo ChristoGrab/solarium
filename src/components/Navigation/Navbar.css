@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 600px) {
   .navbar-container {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     top: 80%;
     width: 100vw;
@@ -57,5 +57,10 @@
     border-top: 2px solid var(--space-orange);
     border-right: none;
     gap: 2px;
+  }
+  
+  .planet-selector {
+    font-size: 1em;
+    margin-right: 0;
   }
 }

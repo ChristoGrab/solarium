@@ -81,3 +81,8 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .sun, .sun-mercury, .sun-mars, .sun-venus, .sun-earth, .sun-jupiter, .sun-saturn, .sun-uranus, .sun-neptune {
+    display: none;
+  }
+}

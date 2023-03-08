@@ -22,7 +22,7 @@
   font-size: 48px;
   text-align: center;
   animation: fadeIn 3s;
-  z-index: 10;
+  z-index: 9;
   font-family: 'SpaceFont';
   margin-right: 2%;
   margin-top: .5em;

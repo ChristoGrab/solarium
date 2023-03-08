@@ -42,3 +42,20 @@
 .active {
   color: whitesmoke;
 }
+
+/* Phone screen styles */
+
+@media only screen and (max-width: 600px) {
+  .navbar-container {
+    position: fixed;
+    bottom: 0;
+    top: 80%;
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 2px solid var(--space-orange);
+    border-right: none;
+    gap: 2px;
+  }
+}

@@ -133,3 +133,10 @@
   background: var(--neptune-background);
   box-shadow: 2px -2px 5px 4px hsl(197, 11%, 24%, 0.5), inset 1em -1em .5em #000;
 }
+
+@media only screen and (max-width: 600px) {
+  .earth, .jupiter, .mars, .neptune, .mercury, .neptune, .saturn, .uranus, .venus {
+    top: 20vh;
+    left: 10vw;
+  }
+}

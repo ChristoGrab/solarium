@@ -166,9 +166,10 @@
   100% { transform: rotate(360deg) }
 }
 
+/* Mobile styling */
+
 @media only screen and (max-width: 600px) {
   .solar-system {
-    width: 50vw;
-    height: 50vh;
+    top: 15vw;
   }
 }

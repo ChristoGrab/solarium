@@ -43,7 +43,7 @@
   color: whitesmoke;
 }
 
-/* Phone screen styles */
+/* Mobile styles */
 
 @media only screen and (max-width: 600px) {
   .navbar-container {
@@ -62,5 +62,7 @@
   .planet-selector {
     font-size: 1em;
     margin-right: 0;
+    justify-self: center;
+    align-self: center;
   }
 }

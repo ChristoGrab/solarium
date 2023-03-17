@@ -6,7 +6,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  animation: fadeIn 1500ms linear;
+  animation: fadeIn 1500ms linear, dropdown 1500ms linear;
+}
+
+@keyframes dropdown {
+  from { bottom: 50%; }
+  to { bottom: 0;}
 }
 
 .sun-size, .mercury-size, .venus-size, .earth-size, .mars-size,

@@ -2,7 +2,7 @@
 
 Welcome to Solarium, a frontend web app that uses the majesty of CSS to let you explore the Solar System!
 
-The landing page contains a model of each planet's relative orbital period.  Note that distances and sizes are obviously not to scale, but orbital periods are accurate relative to each other.  If you want to read some more on an individual planet, just use the navbar to select one for a zoomed in view and some fun facts!
+The landing page contains a model of each planet's relative orbital period.  Users can switch views for to-scale representations of the planetary sizes and distances from the sun.  Clicking on any of the planet's names in the navbar will bring up some more information about each individual planet.
 
 [Check out the live link here](https://main.d3r14dsa2y4rzh.amplifyapp.com/)
 

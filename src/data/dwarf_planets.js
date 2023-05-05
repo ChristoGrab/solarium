@@ -1,3 +1,6 @@
+// This object contains all data for dwarf planets in the solar system.
+// It is not yet implemented in the app.
+
 const dwarfData = {
   "pluto": {
     "name": "Pluto",

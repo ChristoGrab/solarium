@@ -1,3 +1,7 @@
+// This object contains all the data for each planet in the solar system.
+// When the useParams hook is used in the InfoCard component, it returns the name of the planet from the URL,
+// which is used to fetch the correct planet data from this object.
+
 const planetData = {
   "mercury": {
     "name": "Mercury",

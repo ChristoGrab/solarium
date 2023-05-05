@@ -7,15 +7,21 @@ import "./InfoCard.css"
 
 const InfoCard = () => {
   
+  // use the useParams hook to get the planet name from the URL
+  
   const { planet } = useParams();
   const navigate = useNavigate();
-  const [planetStats, setPlanetStats] = useState("")
+  
+  
+  // create a state variable to hold the planet stats, initialized to an empty object
+  const [planetStats, setPlanetStats] = useState({})
 
   const returnToMainMenu = async (e) => {
     e.preventDefault();
     return navigate('/')
   }
 
+  // use the useEffect hook to set the planetStats state variable to the planet from useParams
   useEffect(() => {
     let currentPlanet = planetData[planet]
     setPlanetStats(currentPlanet)

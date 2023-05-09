@@ -8,30 +8,32 @@ import { useContext, useEffect, useState } from 'react'
 const SolarSystem = () => {
 
   // use the useContext hook to get the systemView state variable and the setSystemView function
-  const { systemType } = useContext(SystemContext)
+  const { systemView } = useContext(SystemContext)
   
-  const [systemView, setSystemView] = useState("orbit")
+  const [system, setSystem] = useState("orbit")
+  
+  console.log("systemView", systemView)
   
   useEffect(() => {
-    setSystemView(systemType)
+    setSystem(systemView)
 }, [systemView])
   
   // use the systemView state variable to determine which component to render
-  if (systemView === "orbit") return (
+  if (system === "orbit") return (
     <>
     <Orbit />
     <SystemMenu />
     </>
   )
   
-  if (systemView === "size") return (
+  if (system === "size") return (
     <>
     <Size />
     <SystemMenu />
     </> 
   )
   
-  if (systemView === "distance") return (
+  if (system === "distance") return (
     <>
     <Distance />
     <SystemMenu />

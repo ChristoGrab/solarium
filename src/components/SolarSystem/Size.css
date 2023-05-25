@@ -101,9 +101,17 @@
 .name-tag {
   position: absolute;
   bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
   font-size: 1em;
   font-family: 'SpaceFont';
   font-weight: bold;
   color: var(--space-orange);
+  background-color: #13080e;
+  padding: 12px;
+  border: 2px solid var(--space-orange);
+  border-radius: 10px;
   animation: fadeIn 400ms linear;
 }

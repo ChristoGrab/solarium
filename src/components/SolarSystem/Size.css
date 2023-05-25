@@ -20,6 +20,11 @@
   z-index: 20;
 }
 
+.sun-size, .mercury-size:hover, .venus-size:hover, .earth-size:hover, .mars-size:hover,
+.jupiter-size:hover, .saturn-size:hover, .uranus-size:hover, .neptune-size:hover {
+  cursor: pointer;
+}
+
 .sun-size {
   height: calc(695508vw / 4000);
   width: calc(695508vw / 4000);
@@ -91,4 +96,14 @@
   background: var(--neptune-background);
   transform: rotate(225deg);
   box-shadow: inset 5px -5px 10px 3px black;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 10%;
+  font-size: 1em;
+  font-family: 'SpaceFont';
+  font-weight: bold;
+  color: var(--space-orange);
+  animation: fadeIn 400ms linear;
 }

@@ -3,9 +3,9 @@ import { SystemContext } from "../../context/PlanetContext"
 import { useContext } from 'react'
 
 const SystemMenu = () => {
-  
+
   const { setSystemView } = useContext(SystemContext)
-  
+
   const viewOrbit = (e) => {
     e.preventDefault();
 
@@ -27,10 +27,13 @@ const SystemMenu = () => {
   return (
     <div className="system-type-menu">
     <button className="system-type-button"
+    id="orbit-button"
     onClick={viewOrbit}>Orbit</button>
     <button className="system-type-button"
+    id="size-button"
     onClick={viewSize}>Size</button>
     <button className="system-type-button"
+    id="distance-button"
     onClick={viewDistance}>Distance</button>
     </div>
   )

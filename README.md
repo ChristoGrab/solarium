@@ -19,3 +19,7 @@ The landing page contains a model of each planet's relative orbital period.  Use
 - Dwarf Planets
 - Asteroids?
 - Improved animations/transitions
+
+## Installing Locally
+
+To install and run Solarium locally

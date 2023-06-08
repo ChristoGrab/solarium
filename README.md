@@ -20,6 +20,19 @@ The landing page contains a model of each planet's relative orbital period.  Use
 - Asteroids?
 - Improved animations/transitions
 
-## Installing Locally
+## Installing and Running Locally
 
-To install and run Solarium locally
+To create a fork and run your own version of Solarium locally, open a terminal and run the command:
+
+```
+git repo fork https://github.com/ChristoGrab/Solarium.git --clone
+```
+
+Then navigate to the root folder of the project and run:
+
+```
+npm install
+npm start
+```
+
+Congratulations! You can now open Solarium in the browser at the designated localhost port.

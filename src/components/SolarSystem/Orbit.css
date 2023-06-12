@@ -12,7 +12,7 @@
 .jupiter-path, .saturn-path, .uranus-path, .neptune-path {
   border-radius: 50%;
   position: absolute;
-  outline: 1px solid whitesmoke;
+  outline: 1px solid var(--active-white);
 }
 
 .tiny-mercury, .tiny-venus, .tiny-earth, .tiny-mars,

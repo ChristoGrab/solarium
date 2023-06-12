@@ -18,16 +18,12 @@
   font-size: 1.5em;
 }
 
-.system-type-button:hover {
-  color: whitesmoke;
+.system-type-button:hover, .is-active {
+  color: var(--active-white);
 }
 
 .system-type-button:hover {
   cursor: pointer;
-}
-
-.is-active {
-  color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {

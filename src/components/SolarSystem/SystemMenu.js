@@ -8,6 +8,7 @@ const SystemMenu = () => {
 
 
   // These buttons will change the state of the system view using the Context API
+  // This will also change the active state of the buttons to show which view is active
   const viewOrbit = (e) => {
     e.preventDefault();
     

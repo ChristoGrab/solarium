@@ -1,18 +1,21 @@
 import "./Size.css"
 import { useState } from "react";
 import planetData from "../../data/planets";
-import findCircumferenceFromRadius from "../../functions/findCircumferenceFromRadius";
 
 const Size = () => {
 
   const [selectedPlanet, setSelectedPlanet] = useState(null)
   const [isHovered, setIsHovered] = useState(false)
 
+  // When the user hovers over a planet, the planet's name is set to the selectedPlanet state
+  // and the isHovered state is set to true. This will trigger the info card to display.
   const handleMouseEnter = (planet) => {
     setSelectedPlanet(planet)
     setIsHovered(true)
   }
 
+  // When the user's mouse leaves the planet, the selectedPlanet state is set to null
+  // This will trigger the info card to hide.
   const handleMouseLeave = () => {
     setSelectedPlanet(null)
     setIsHovered(false)
@@ -65,7 +68,6 @@ const Size = () => {
       {isHovered && <section className="name-tag">
         <div>{selectedPlanet}</div>
         <div>Diameter : {planetData[selectedPlanet]?.radius * 2} km</div>
-        {/* <div>Circumference : {findCircumferenceFromRadius(planetData[selectedPlanet]?.radius)} km</div> */}
       </section>}
     </main>
   )

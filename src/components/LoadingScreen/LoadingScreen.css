@@ -1,0 +1,41 @@
+.loading-screen {
+  background: var(--);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text {
+  
+}
+
+.loading-bar {
+  width: 200px;
+  height: 35px;
+  background: var(--space-black);
+  border: 2px solid var(--space-orange);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.loading-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--space-orange);
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

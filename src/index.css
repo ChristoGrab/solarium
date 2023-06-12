@@ -13,7 +13,9 @@ button:hover {
 }
 
 :root {
+  --menu-brown: #13080e;
   --space-orange: #e8ab8c;
+  --active-white: rgb(245, 245, 245);
   --mercury-background: linear-gradient(to top right, black, rgb(70, 70, 70), white);
   --venus-background: linear-gradient(to top right, black, rgb(255, 174, 0), white);
   --earth-background: url('../public/earth.png');

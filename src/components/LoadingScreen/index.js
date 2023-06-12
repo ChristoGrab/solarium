@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./LoadingScreen.css";
 
 const LoadingScreen = () => {
   
@@ -13,7 +14,7 @@ const LoadingScreen = () => {
   
   return (
     <div className="loading-screen">
-      <div className="loading-text">Welcome to Solarium</div>
+      <h1 className="loading-title">Welcome to Solarium</h1>
       <div className="loading-bar"></div>
       <div className="loading-update">{loadingText[loadingTextIndex]}</div>
     </div>

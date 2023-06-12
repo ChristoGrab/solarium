@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   width: clamp(100px, 15%, 300px);
-  background: #13080e;
+  background: var(--menu-brown);
   border-right: 2px solid #e8ab8c;
   border-radius: 0 10px 10px 0;
   padding-right: 8px;
@@ -26,7 +26,7 @@
 
 .planet-selector {
   text-decoration: none;
-  color: #e8ab8c;
+  color: var(--space-orange);
   font-size: 1.3em;
   font-weight: bold;
   margin-right: clamp(20px, 10%, 50px);
@@ -35,12 +35,8 @@
   font-family: 'SpaceFont';
 }
 
-.planet-selector:hover {
-  color: whitesmoke;
-}
-
-.active {
-  color: whitesmoke;
+.planet-selector:hover, .active {
+  color: var(--active-white);
 }
 
 /* Mobile styles */

@@ -3,12 +3,12 @@
   top: 15%;
   right: 2%;
   background: #13080e;
-  border: 2px solid #e8ab8c;
+  border: 2px solid var(--space-orange);
   height: clamp(300px, 48vh, 600px);
   width: clamp(200px, 20%, 400px);
   z-index: 10;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px #e8ab8c inset;
+  box-shadow: 1px 1px 10px var(--space-orange) inset;
   animation: fadeIn 2s linear;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   position: relative;
   background-color: #e8ab8c;
   border: none;
-  color: white;
+  color: #ffffff;
   height: 40px;
   width: clamp(40px, 50px, 50px);
   font-weight: bold;
@@ -45,7 +45,7 @@
 
 .infocard-back-button::before {
   content: "";
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
   position: absolute;

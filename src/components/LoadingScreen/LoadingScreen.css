@@ -1,24 +1,31 @@
 .loading-screen {
-  background: var(--);
+  height: 100vh;
+  width: 100vw;
+  background: var(--menu-brown);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.loading-text {
-  
+.loading-title, .loading-text, .loading-subtitle {
+  color: var(--space-orange);
+  font-family: "SpaceFont";
 }
 
 .loading-bar {
-  width: 200px;
-  height: 35px;
-  background: var(--space-black);
+  width: 15em;
+  height: 2em;
   border: 2px solid var(--space-orange);
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
+}
+
+.loading-text {
+  font-size: 1em;
+  margin-top: 1em;
 }
 
 .loading-bar::before {

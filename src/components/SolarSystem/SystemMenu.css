@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.is-active {
+  color: whitesmoke;
+}
+
 @media only screen and (max-width: 600px) {
   .system-type-menu {
     display: none;

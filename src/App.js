@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
 import InfoCard from "./components/InfoCard";
 import SolarSystem from "./components/SolarSystem";
+import Starfield from "./components/Starfield";
 import LoadingScreen from "./components/LoadingScreen";
 import { useState, useEffect } from "react";
 import "./index.css";
@@ -26,14 +27,17 @@ function App() {
   return (
   <>
     <BrowserRouter>
-      <Navigation />
-      <Viewport />
+      {/* <Navigation />
+      <Viewport /> */}
       <Routes>
         <Route path="/" exact element={<SolarSystem />} />
       </Routes>
       <Routes>
-        <Route path="/:planet" element={<InfoCard />} />
+        <Route path="/canvas" exact element={<Starfield />} />
       </Routes>
+      {/* <Routes>
+        <Route path="/:planet" element={<InfoCard />} />
+      </Routes> */}
     </BrowserRouter>
   </>
   );

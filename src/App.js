@@ -3,9 +3,25 @@ import Navigation from './components/Navigation';
 import Viewport from './components/Viewport';
 import InfoCard from "./components/InfoCard";
 import SolarSystem from "./components/SolarSystem";
+import LoadingScreen from "./components/LoadingScreen";
+import { useState, useEffect } from "react";
 import "./index.css";
 
 function App() {
+  
+  const [appLoaded, setAppLoaded] = useState(false);
+
+  useEffect(() => {
+  setTimeout(() => {
+    setAppLoaded(true);
+  }, 3000);
+  }, []);
+  
+  if (!appLoaded) {
+    return (
+      <LoadingScreen />
+    )
+  }
 
   return (
   <>

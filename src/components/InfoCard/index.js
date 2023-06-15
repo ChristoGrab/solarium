@@ -6,13 +6,13 @@ import Planet from '../Planet'
 import "./InfoCard.css"
 
 const InfoCard = () => {
-  
+
   // use the useParams hook to get the planet name from the URL
-  
+
   const { planet } = useParams();
   const navigate = useNavigate();
-  
-  
+
+
   // create a state variable to hold the planet stats, initialized to an empty object
   const [planetStats, setPlanetStats] = useState({})
 
@@ -26,7 +26,7 @@ const InfoCard = () => {
     let currentPlanet = planetData[planet]
     setPlanetStats(currentPlanet)
   }, [planet])
-  
+
   return (
     <>
     <Planet planet={planet}/>

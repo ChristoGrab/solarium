@@ -1,0 +1,48 @@
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  background: var(--menu-brown);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-title, .loading-text, .loading-subtitle {
+  color: var(--space-orange);
+  font-family: "SpaceFont";
+}
+
+.loading-bar {
+  width: 15em;
+  height: 2em;
+  border: 2px solid var(--space-orange);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.loading-text {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.loading-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--space-orange);
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,3 +1,5 @@
+// Sun Data
+
 const sunData = {
   "name": "Sol",
   "type": "Yellow Dwarf",

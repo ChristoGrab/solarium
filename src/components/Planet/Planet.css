@@ -32,7 +32,7 @@
 
 .earth-clouds {
   position: relative;
-  background: whitesmoke;
+  background: var(--active-white);
   width: 100px;
   top: 20%;
   left: 20%;

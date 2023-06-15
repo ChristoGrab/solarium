@@ -9,6 +9,12 @@
   animation: rotate 500s infinite linear;
   display: flex;
   justify-content: flex-end;
+  transition: fadeFromBlack 1s;
+}
+
+@keyframes fadeFromBlack {
+  0% { background-color: black; }
+  100% { background-color: transparent; }
 }
 
 @keyframes rotate {

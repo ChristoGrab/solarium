@@ -109,7 +109,7 @@
   font-family: 'SpaceFont';
   font-weight: bold;
   color: var(--space-orange);
-  background-color: #13080e;
+  background-color: var(--menu-brown);
   padding: 12px;
   border: 2px solid var(--space-orange);
   border-radius: 10px;

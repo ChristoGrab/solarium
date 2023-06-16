@@ -4,9 +4,9 @@
   height: 100vh;
   top: 0;
   right: 0;
-  background-image: url('../../../public/night-sky.webp');
-  background-size: 150% 150%;
-  animation: rotate 500s infinite linear;
+  /* background-image: url('../../../public/night-sky.webp'); */
+  /* background-size: 150% 150%; */
+  /* animation: rotate 500s infinite linear; */
   display: flex;
   justify-content: flex-end;
   transition: fadeFromBlack 1s;
@@ -24,7 +24,10 @@
 }
 
 .title {
-  color: #e8ab8c;
+  /* position: absolute;
+  top: 0.5em;
+  right: 0.5em; */
+  color: var(--space-orange);
   font-size: 48px;
   text-align: center;
   animation: fadeIn 3s;
@@ -49,7 +52,7 @@
 }
 
 .creator {
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   text-align: center;
   animation: fadeIn 5s;
@@ -57,7 +60,7 @@
 }
 
 .github-link {
-  color: white;
+  color: #ffffff;
   margin-left: 5px;
 }
 

@@ -1,4 +1,5 @@
 import "./Viewport.css";
+import Starfield from "../Starfield";
 
 const Viewport = () => {
 

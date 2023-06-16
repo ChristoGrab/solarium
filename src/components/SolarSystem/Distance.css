@@ -2,6 +2,8 @@
   width: 80%;
   height: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
   margin-left: 16%;
   display: grid;
   grid-template-columns: 0.4fr 0.3fr 0.3fr 0.5fr 4.2fr 4.7fr 10.3fr 10.3fr;

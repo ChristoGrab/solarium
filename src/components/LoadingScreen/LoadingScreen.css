@@ -35,7 +35,8 @@
   left: 0;
   height: 100%;
   background: var(--space-orange);
-  animation: loading 3s linear infinite;
+  animation: loading 3s linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes loading {

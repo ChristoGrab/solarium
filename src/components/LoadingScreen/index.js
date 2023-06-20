@@ -15,7 +15,6 @@ const LoadingScreen = () => {
   // A timeout to change the loading text every second
   setTimeout(() => {
     if (loadingTextIndex < 2) setLoadingTextIndex(loadingTextIndex + 1);
-    else setLoadingTextIndex(0);
   }, 1000);
   
   return (

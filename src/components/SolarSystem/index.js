@@ -9,15 +9,13 @@ const SolarSystem = () => {
 
   // use the useContext hook to get the systemView state variable and the setSystemView function
   const { systemView } = useContext(SystemContext)
-  
+
   const [system, setSystem] = useState("orbit")
-  
-  console.log("systemView", systemView)
-  
+
   useEffect(() => {
     setSystem(systemView)
 }, [systemView])
-  
+
   // use the systemView state variable to determine which component to render
   if (system === "orbit") return (
     <>

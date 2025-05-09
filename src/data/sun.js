@@ -8,3 +8,5 @@ const sunData = {
   "radius": 695508,
   "gravity": 274,
 }
+
+export default sunData;
